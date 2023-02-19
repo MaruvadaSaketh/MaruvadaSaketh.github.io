@@ -1,0 +1,761 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:ital,wght@0,300;0,400;0,700;0,800;0,900;1,200&display=swap" rel="stylesheet">
+    <title>E-book | Books</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navigation">
+            <div class="logo">
+                E-BOOKS STORE
+            </div>
+            <ul class="navigation--list">
+                <li class="navigation--item"><a href="home.html" class="navigation--link">Home</a></li>
+                <li class="navigation--item"><a href="book.html" class="navigation--link active">Books</a></li>
+                <li class="navigation--item"><a href="about.html" class="navigation--link">About Us</a></li>
+
+            </ul>
+        </nav>
+
+        <div class="search-container">
+            <div class="search__form" id="search-form">
+                <label class="search__label" for="search__input">Search Lectures</label>
+                <input class="search__input" onkeyup="filterBySearchHandler()" id="search__input">
+            </div>
+        </div>
+
+        <!--<h1 class="main-header" id="mathematics">-->
+        <!--    Mathematics-->
+        <!--</h1>-->
+
+        <ul class="container" id="math-container">
+            <li class="cont">
+                <img class="cont-img" src="Mathematics.jpg" alt="image_1">
+                <h3 class="cont-header" id="title">Maths-1</h3>
+                <a href="Mathematics-I.pdf" download>
+                    <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="Mathematics.jpg" alt="image_1">
+                <h3 class="cont-header">Maths-2</h3>
+                <a href="Mathematics 2.pdf" download>
+                    <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="Mathematics.jpg" alt="image_1">
+                <h3 class="cont-header">Maths-3</h3>
+                <a href="mathematics 3.pdf" download>
+                    <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="Mathematics.jpg" alt="image_1">
+                <h3 class="cont-header">Maths-4</h3>
+                <a href="mathematics 4.pdf" download>
+                    <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="Mathematics.jpg" alt="image_1">
+                <h3 class="cont-header">Maths-5</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="Mathematics.jpg" alt="image_1">
+                <h3 class="cont-header">Maths-6</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="Mathematics.jpg" alt="image_1">
+                <h3 class="cont-header">Maths-7</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="Mathematics.jpg" alt="image_1">
+                <h3 class="cont-header">Maths-8</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+        </ul>
+
+        <!--<h1 class="main-header" id="aec">-->
+        <!--    AEC-->
+        <!--</h1>-->
+
+        <ul class="container" id="aec-container">
+
+            <li class="cont">
+                <img class="cont-img" src="analog.jpg" alt="image_1">
+                <h3 class="cont-header">Aec-1</h3>
+                <a href="AEC 1.pdf" download>
+                    <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="analog.jpg" alt="image_1">
+                <h3 class="cont-header">Aec-2</h3>
+                <a href="AEC 1.pdf" download>
+                    <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="analog.jpg" alt="image_1">
+                <h3 class="cont-header">Aec-3</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="analog.jpg" alt="image_1">>
+                <h3 class="cont-header">Aec-4</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="analog.jpg" alt="image_1">
+                <h3 class="cont-header">Aec-5</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="analog.jpg" alt="image_1">
+                <h3 class="cont-header">Aec-6</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="analog.jpg" alt="image_1">
+                <h3 class="cont-header">Aec-7</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="analog.jpg" alt="image_1">
+                <h3 class="cont-header">Aec-8</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="container" id="economics-container">
+
+            <li class="cont">
+                <img class="cont-img" src="economics.jpg" alt="image_1">
+                <h3 class="cont-header">Economics-1</h3>
+                <a href="engineering economy 1.pdf" download>
+                    <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="economics.jpg" alt="image_1">
+                <h3 class="cont-header">Economics-2</h3>
+                <a href="EEC 2.pdf" download>
+                    <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="economics.jpg" alt="image_1">
+                <h3 class="cont-header">Economics-3</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="economics.jpg" alt="image_1">
+                <h3 class="cont-header">Economics-4</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="economics.jpg" alt="image_1">
+                <h3 class="cont-header">Economics-5</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="economics.jpg" alt="image_1">
+                <h3 class="cont-header">Economics-6</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="economics.jpg" alt="image_1">
+                <h3 class="cont-header">Economics-7</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="economics.jpg" alt="image_1">
+                <h3 class="cont-header">Economics-8</h3>
+                <button class="btn center">Download</button>
+            </li>
+        </ul>
+
+        <ul class="container" id="de-container">
+
+            <li class="cont">
+                <img class="cont-img" src="DE.jpg" alt="image_1">
+                <h3 class="cont-header">DE-1</h3>
+                <a href="digielec.pdf" download>
+                    <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="DE.jpg" alt="image_1">
+                <h3 class="cont-header">DE-2</h3>
+                <a href="DE unit 2.pdf" download>
+                    <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="DE.jpg" alt="image_1">
+                <h3 class="cont-header">DE-3</h3>
+                <a href="DE-3.pdf" download>
+                    <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="DE.jpg" alt="image_1">
+                <h3 class="cont-header">DE-4</h3>
+                <a href="DE-4.pdf" download>
+                    <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="DE.jpg" alt="image_1">
+                <h3 class="cont-header">DE-5</h3>
+                <a href="DE-5.pdf" download>
+                    <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="DE.jpg" alt="image_1">
+                <h3 class="cont-header">DE-6</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="DE.jpg" alt="image_1">
+                <h3 class="cont-header">DE-7</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="DE.jpg" alt="image_1">
+                <h3 class="cont-header">DE-8</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="container" id="java-container">
+            <li class="cont">
+                <img class="cont-img" src="JAVA.jpg" alt="image_1">
+                <h3 class="cont-header" id="title">Java-1</h3>
+                <a href="#" download>
+                    <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="JAVA.jpg" alt="image_1">
+                <h3 class="cont-header">Java-2</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="JAVA.jpg" alt="image_1">
+                <h3 class="cont-header">Java-3</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="JAVA.jpg" alt="image_1">
+                <h3 class="cont-header">Java-4</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="JAVA.jpg" alt="image_1">
+                <h3 class="cont-header">Java-5</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="JAVA.jpg" alt="image_1">
+                <h3 class="cont-header">Java-6</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="JAVA.jpg" alt="image_1">
+                <h3 class="cont-header">Java-7</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="JAVA.jpg" alt="image_1">
+                <h3 class="cont-header">Java-8</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+        </ul>
+
+        <!--<h1 class="main-header" id="os">-->
+        <!--    OS-->
+        <!--</h1>-->
+
+        <ul class="container" id="os-container">
+
+            <li class="cont">
+                <img class="cont-img" src="OIP.jpg" alt="image_1">
+                <h3 class="cont-header">OS-1</h3>
+                <a href="os short type_211206_130616.pdf" download>
+                    <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="OIP.jpg" alt="image_1">
+                <h3 class="cont-header">OS-2</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="OIP.jpg" alt="image_1">
+                <h3 class="cont-header">OS-3</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="OIP.jpg" alt="image_1">
+                <h3 class="cont-header">OS-4</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="OIP.jpg" alt="image_1">
+                <h3 class="cont-header">OS-5</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="OIP.jpg" alt="image_1">
+                <h3 class="cont-header">OS-6</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="OIP.jpg" alt="image_1">
+                <h3 class="cont-header">OS-7</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="OIP.jpg" alt="image_1">
+                <h3 class="cont-header">OS-8</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="container" id="dbms-container">
+
+            <li class="cont">
+                <img class="cont-img" src="DBMS.jpg" alt="image_1">
+                <h3 class="cont-header">DBMS-1</h3>
+                <a href="#" download>
+                    <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="DBMS.jpg" alt="image_1">
+                <h3 class="cont-header">DBMS-2</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="DBMS.jpg" alt="image_1">
+                <h3 class="cont-header">DBMS-3</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="DBMS.jpg" alt="image_1">
+                <h3 class="cont-header">DBMS-4</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="DBMS.jpg" alt="image_1">
+                <h3 class="cont-header">DBMS-5</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="DBMS.jpg" alt="image_1">
+                <h3 class="cont-header">DBMS-6</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="DBMS.jpg" alt="image_1">
+                <h3 class="cont-header">DBMS-7</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="DBMS.jpg" alt="image_1">
+                <h3 class="cont-header">DBMS-8</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="container" id="dsa-container">
+
+            <li class="cont">
+                <img class="cont-img" src="DATA STRUCTURE AND ALGORITHM.jpg" alt="image_1">
+                <h3 class="cont-header">DSA-1</h3>
+                <a href="#" download>
+                    <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="DATA STRUCTURE AND ALGORITHM.jpg" alt="image_1">
+                <h3 class="cont-header">DSA-2</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="DATA STRUCTURE AND ALGORITHM.jpg" alt="image_1">
+                <h3 class="cont-header">DSA-3</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="DATA STRUCTURE AND ALGORITHM.jpg" alt="image_1">
+                <h3 class="cont-header">DSA-4</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="DATA STRUCTURE AND ALGORITHM.jpg" alt="image_1">
+                <h3 class="cont-header">DSA-5</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="DATA STRUCTURE AND ALGORITHM.jpg" alt="image_1">
+                <h3 class="cont-header">DSA-6</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="DATA STRUCTURE AND ALGORITHM.jpg" alt="image_1">
+                <h3 class="cont-header">DSA-7</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="DATA STRUCTURE AND ALGORITHM.jpg" alt="image_1">
+                <h3 class="cont-header">DSA-8</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+        </ul>
+
+        <!--<h1 class="main-header" id="os">-->
+        <!--    OS-->
+        <!--</h1>-->
+
+        <ul class="container" id="beee-container">
+
+            <li class="cont">
+                <img class="cont-img" src="beee.jpg" alt="image_1">
+                <h3 class="cont-header">BEEE-1</h3>
+                <a href="os short type_211206_130616.pdf" download>
+                    <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="beee.jpg" alt="image_1">
+                <h3 class="cont-header">BEEE-2</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="beee.jpg" alt="image_1">
+                <h3 class="cont-header">BEEE-3</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="beee.jpg" alt="image_1">
+                <h3 class="cont-header">BEEE-4</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="beee.jpg" alt="image_1">
+                <h3 class="cont-header">BEEE-5</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="beee.jpg" alt="image_1">
+                <h3 class="cont-header">BEEE-6</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="beee.jpg" alt="image_1">
+                <h3 class="cont-header">BEEE-7</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="beee.jpg" alt="image_1">
+                <h3 class="cont-header">BEEE-8</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="container" id="CESS-container">
+
+            <li class="cont">
+                <img class="cont-img" src="DBMS.jpg" alt="image_1">
+                <h3 class="cont-header">CESS-1</h3>
+                <a href="#" download>
+                    <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="DBMS.jpg" alt="image_1">
+                <h3 class="cont-header">CESS-2</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="DBMS.jpg" alt="image_1">
+                <h3 class="cont-header">CESS-3</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="DBMS.jpg" alt="image_1">
+                <h3 class="cont-header">CESS-4</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+
+        </ul>
+
+        <ul class="container" id="cetc-container">
+
+            <li class="cont">
+                <img class="cont-img" src="DATA STRUCTURE AND ALGORITHM.jpg" alt="image_1">
+                <h3 class="cont-header">CETC-1</h3>
+                <a href="#" download>
+                    <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="DATA STRUCTURE AND ALGORITHM.jpg" alt="image_1">
+                <h3 class="cont-header">CETC-2</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="DATA STRUCTURE AND ALGORITHM.jpg" alt="image_1">
+                <h3 class="cont-header">CETC-3</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="DATA STRUCTURE AND ALGORITHM.jpg" alt="image_1">
+                <h3 class="cont-header">CETC-4</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+
+        </ul>
+
+        <!--<h1 class="main-header" id="eme">-->
+        <!--    OS-->
+        <!--</h1>-->
+
+        <ul class="container" id="eme-container">
+
+            <li class="cont">
+                <img class="cont-img" src="EME.jpg" alt="image_1">
+                <h3 class="cont-header">EME-1</h3>
+                <a href="os short type_211206_130616.pdf" download>
+                    <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="EME.jpg" alt="image_1">
+                <h3 class="cont-header">EME-2</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="EME.jpg" alt="image_1">
+                <h3 class="cont-header">EME-3</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="EME.jpg" alt="image_1">
+                <h3 class="cont-header">EME-4</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="EME.jpg" alt="image_1">
+                <h3 class="cont-header">EME-5</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="EME.jpg" alt="image_1">
+                <h3 class="cont-header">EME-6</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="EME.jpg" alt="image_1">
+                <h3 class="cont-header">EME-7</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="EME.jpg" alt="image_1">
+                <h3 class="cont-header">EME-8</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="container" id="chemistry-container">
+
+            <li class="cont">
+                <img class="cont-img" src="chemistry.jpg" alt="image_1">
+                <h3 class="cont-header">CHEMISTRY-1</h3>
+                <a href="#" download>
+                    <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="chemistry.jpg" alt="image_1">
+                <h3 class="cont-header">CHEMISTRY-2</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="chemistry.jpg" alt="image_1">
+                <h3 class="cont-header">CHEMISTRY-3</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="chemistry.jpg" alt="image_1">
+                <h3 class="cont-header">CHEMISTRY-4</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="chemistry.jpg" alt="image_1">
+                <h3 class="cont-header">CHEMISTRY-5</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="chemistry.jpg" alt="image_1">
+                <h3 class="cont-header">CHEMISTRY-6</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="chemistry.jpg" alt="image_1">
+                <h3 class="cont-header">CHEMISTRY-7</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="chemistry.jpg" alt="image_1">
+                <h3 class="cont-header">CHEMISTRY-8</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="container" id="physics-container">
+
+            <li class="cont">
+                <img class="cont-img" src="physics.jpg" alt="image_1">
+                <h3 class="cont-header">PHYSICS-1</h3>
+                <a href="#" download>
+                    <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="physics.jpg" alt="image_1">
+                <h3 class="cont-header">PHYSICS-2</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="physics.jpg" alt="image_1">
+                <h3 class="cont-header">PHYSICS-3</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="physics.jpg" alt="image_1">
+                <h3 class="cont-header">PHYSICS-4</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="physics.jpg" alt="image_1">
+                <h3 class="cont-header">PHYSICS-5</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="physics.jpg" alt="image_1">
+                <h3 class="cont-header">PHYSICS-6</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="physics.jpg" alt="image_1">
+                <h3 class="cont-header">PHYSICS-7</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+            <li class="cont">
+                <img class="cont-img" src="physics.jpg" alt="image_1">
+                <h3 class="cont-header">PHYSICS-8</h3>
+                <button class="btn center">Download</button>
+                </a>
+            </li>
+        </ul>
+
+    </header>
+
+    <script src="book.js"></script>
+</body>
+
+</html>
