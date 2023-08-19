@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Raksha Bandhan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h3>WISH YOU A HAPPY</h3>
+    <h1>R
+        <div class="flower">
+            <div class="inner-most-part"></div>
+            <div class="middle-part" style="--t: 1; --l:0"></div>
+            <div class="middle-part" style="--t: 0; --l:-1"></div>
+            <div class="middle-part" style="--t: -1; --l:0"></div>
+            <div class="middle-part" style="--t: 0; --l:1"></div>
+        </div>
+        ksh
+        <div class="flower">
+            <div class="inner-most-part"></div>
+            <div class="middle-part" style="--t: 1; --l:0"></div>
+            <div class="middle-part" style="--t: 0; --l:-1"></div>
+            <div class="middle-part" style="--t: -1; --l:0"></div>
+            <div class="middle-part" style="--t: 0; --l:1"></div>
+        </div><br/> B
+        <div class="flower">
+            <div class="inner-most-part"></div>
+            <div class="middle-part" style="--t: 1; --l:0"></div>
+            <div class="middle-part" style="--t: 0; --l:-1"></div>
+            <div class="middle-part" style="--t: -1; --l:0"></div>
+            <div class="middle-part" style="--t: 0; --l:1"></div>
+        </div>ndh
+        <div class="flower">
+            <div class="inner-most-part"></div>
+            <div class="middle-part" style="--t: 1; --l:0"></div>
+            <div class="middle-part" style="--t: 0; --l:-1"></div>
+            <div class="middle-part" style="--t: -1; --l:0"></div>
+            <div class="middle-part" style="--t: 0; --l:1"></div>
+        </div>n
+    </h1>
+    <div class="rainBg"></div>
+    <script type="text/javascript">
+        let colors = ['#318fb5', '#b52b65', '#2ecc71', '#f1c40f', '#e67e22', '#c0392b', '#9b59b6'];
+
+        setInterval(() => {
+            let i = document.createElement('i');
+            i.style.left = Math.floor(Math.random() * window.innerWidth) + 'px';
+            i.style.background = colors[Math.floor(Math.random() * colors.length)]
+            document.querySelector('.rainBg').appendChild(i);
+        }, 500);
+
+        setInterval(() => {
+            document.querySelector('.rainBg').firstChild.remove();
+        }, 6000);
+    </script>
+</body>
+
+</html>
