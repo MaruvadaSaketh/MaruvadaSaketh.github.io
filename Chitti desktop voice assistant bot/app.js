@@ -16,16 +16,16 @@ function wishMe() {
     var hour = day.getHours();
 
     if (hour >= 0 && hour < 12) {
-        speak("Good Morning Boss...");
+        speak("Good Morning...");
     } else if (hour >= 12 && hour < 17) {
-        speak("Good Afternoon Master...");
+        speak("Good Afternoon...");
     } else {
-        speak("Good Evening Sir...");
+        speak("Good Evening...");
     }
 }
 
 window.addEventListener('load', () => {
-    speak("Initializing JARVIS...");
+    speak("Hi, I'm Chitti the Robot. Speed 1 terahertz, memory 1 zigabyte...");
     wishMe();
 });
 
