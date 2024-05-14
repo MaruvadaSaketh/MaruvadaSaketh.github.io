@@ -16,16 +16,16 @@ function wishMe() {
     var hour = day.getHours();
 
     if (hour >= 0 && hour < 12) {
-        speak("Good Morning ...");
+        speak("Good Morning Boss...");
     } else if (hour >= 12 && hour < 17) {
-        speak("Good Afternoon ...");
+        speak("Good Afternoon Master...");
     } else {
-        speak("Good Evening ...");
+        speak("Good Evening Sir...");
     }
 }
 
 window.addEventListener('load', () => {
-    speak("Hi, I'm Chitti the Robot. Speed 1 terahertz, memory 1 zigabyte...");
+    speak("Initializing JARVIS...");
     wishMe();
 });
 
@@ -71,6 +71,10 @@ function takeCommand(message) {
     } else if (message.includes('date')) {
         const date = new Date().toLocaleString(undefined, { month: "short", day: "numeric" });
         const finalText = "Today's date is " + date;
+        speak(finalText);
+    } else if (message.includes('calculator')) {
+        window.open('Calculator:///');
+        const finalText = "Opening Calculator";
         speak(finalText);
     } else {
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
