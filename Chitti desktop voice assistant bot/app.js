@@ -68,6 +68,15 @@ function takeCommand(message) {
      }else if (message.includes("open canva")) {
         window.open("https://www.canva.com", "_blank");
         speak("Opening Canva...");
+     }else if (message.includes("open github")) {
+        window.open("https://github.com", "_blank");
+        speak("Opening Github...");
+     }else if (message.includes("open google colab")) {
+        window.open("https://colab.research.google.com", "_blank");
+        speak("Opening Google Colab...");
+    }else if (message.includes("open mail")) {
+        window.open("https://mail.google.com", "_blank");
+        speak("Opening Google Mail...");
     }else if (message.includes("open flipkart")) {
         window.open("https://www.flipkart.com", "_blank");
         speak("Opening Flipkart...");  
