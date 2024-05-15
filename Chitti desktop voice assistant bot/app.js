@@ -71,9 +71,9 @@ function takeCommand(message) {
      }else if (message.includes("open github")) {
         window.open("https://github.com", "_blank");
         speak("Opening Github...");
-     }else if (message.includes("open google colab")) {
+     }else if (message.includes("open colab")) {
         window.open("https://colab.research.google.com", "_blank");
-        speak("Opening Google Colab...");
+        speak("Opening Colab...");
     }else if (message.includes("open mail")) {
         window.open("https://mail.google.com", "_blank");
         speak("Opening Google Mail...");
