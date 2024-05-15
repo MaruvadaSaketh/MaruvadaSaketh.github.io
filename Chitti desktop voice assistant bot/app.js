@@ -56,6 +56,36 @@ function takeCommand(message) {
     } else if (message.includes("open facebook")) {
         window.open("https://facebook.com", "_blank");
         speak("Opening Facebook...");
+    }else if (message.includes("open instagram")) {
+        window.open("https://www.instagram.com", "_blank");
+        speak("Opening Instagram...");
+     }else if (message.includes("open linkedin")) {
+        window.open("https://www.linkedin.com", "_blank");
+        speak("Opening Linkedin...");
+    }else if (message.includes("open amazon")) {
+        window.open("https://www.amazon.in", "_blank");
+        speak("Opening Amazon...");
+     }else if (message.includes("open canva")) {
+        window.open("https://www.canva.com", "_blank");
+        speak("Opening Canva...");
+    }else if (message.includes("open flipkart")) {
+        window.open("https://www.flipkart.com", "_blank");
+        speak("Opening Flipkart...");  
+    }else if (message.includes("open netflix")) {
+        window.open("https://www.netflix.com", "_blank");
+        speak("Opening netflix...");
+    }else if (message.includes("open disneyplus hotstar")) {
+        window.open("https://www.hotstar.com", "_blank");
+        speak("Opening Disneyplus hotstar...");
+     }else if (message.includes("open amazon prime")) {
+        window.open("https://www.primevideo.com", "_blank");
+        speak("Opening Amazon Prime...");  
+     }else if (message.includes("open zee5")) {
+        window.open("https://www.zee5.com", "_blank");
+        speak("Opening Zee5..."); 
+     }else if (message.includes("open jio cinema")) {
+        window.open("https://www.jiocinema.com/", "_blank");
+        speak("Opening Jio Cinema...");     
     } else if (message.includes('what is') || message.includes('who is') || message.includes('what are')) {
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
         const finalText = "This is what I found on the internet regarding " + message;
