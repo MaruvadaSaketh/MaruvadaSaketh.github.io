@@ -46,7 +46,7 @@ btn.addEventListener('click', () => {
 
 function takeCommand(message) {
     if (message.includes('hey') || message.includes('hello')) {
-        speak("Hello Sir, How May I Help You?");
+        speak("Hello, I'm Chitti , How can I Help You?");
     } else if (message.includes("open google")) {
         window.open("https://google.com", "_blank");
         speak("Opening Google...");
@@ -133,6 +133,26 @@ function takeCommand(message) {
         window.open('Calculator:///');
         const finalText = "Opening Calculator";
         speak(finalText);
+    } else if (message.includes('Whatsapp')) {
+        window.open('whatsapp:///');
+        const finalText = "Opening whatsapp";
+        speak(finalText); 
+    } else if (message.includes('this pc')) {
+        window.open('this pc:///');
+        const finalText = "Opening this pc";
+        speak(finalText);
+    } else if (message.includes('documents')) {
+        window.open('documents:///');
+        const finalText = "Opening documents";
+        speak(finalText); 
+    } else if (message.includes('download')) {
+        window.open('download:///');
+        const finalText = "Opening download";
+        speak(finalText); 
+    } else if (message.includes('telegram')) {
+        window.open('telegram:///');
+        const finalText = "Opening telegram";
+        speak(finalText);     
     } else {
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
         const finalText = "I found some information for " + message + " on Google";
