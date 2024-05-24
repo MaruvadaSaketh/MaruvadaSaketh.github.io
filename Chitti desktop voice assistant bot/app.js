@@ -95,18 +95,18 @@ function takeCommand(message) {
     }else if (message.includes("open netflix")) {
         window.open("https://www.netflix.com", "_blank");
         speak("Opening netflix...");
-    }else if (message.includes("open disneyplus hotstar")) {
+    }else if (message.includes("open disneyplushotstar")) {
         window.open("https://www.hotstar.com", "_blank");
-        speak("Opening Disneyplus hotstar...");
+        speak("Opening Disneyplushotstar...");
      }else if (message.includes("open prime")) {
         window.open("https://www.primevideo.com", "_blank");
         speak("Opening Prime...");  
      }else if (message.includes("open zee5")) {
         window.open("https://www.zee5.com", "_blank");
         speak("Opening Zee5..."); 
-     }else if (message.includes("open jio cinema")) {
+     }else if (message.includes("open jiocinema")) {
         window.open("https://www.jiocinema.com", "_blank");
-        speak("Opening Jio Cinema...");
+        speak("Opening JioCinema...");
      }else if (message.includes("open chatgpt")) {
         window.open("https://chatgpt.com", "_blank");
         speak("Opening ChatGPT...");
